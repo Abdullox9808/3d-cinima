@@ -74,14 +74,17 @@ body {
     animation: yonsin 0.8s infinite linear;
 
 }
-
+.logo>img{
+    
+    animation: scle 2s linear infinite;
+}
 .logo__word{
     display: block;
     width: max-content;
 }
 
 .logo:hover .logo__word {
-    animation: aylansin 1s infinite linear;
+    animation: aylansin 0.4s infinite linear;
     
 }
 
@@ -186,6 +189,23 @@ body {
       
     }
 }
+@keyframes scle {
+    0%{transform: scale(1);
+        
+    }
+    25%{
+transform: scale(1.2);
+    }
+    50%{
+transform: scale(1.3);
+    }
+    75%{
+transform: scale(1.4);
+    }
+    100%{
+transform: scale(1.1);
+    }
+}
 .intro{
     position: relative;
     height: 640px;
@@ -240,7 +260,7 @@ body {
     border-radius: 4px;
     transition: 0.2s linear;
     text-decoration: none;
-
+  
     
 }
 .button-mr30{
@@ -328,11 +348,9 @@ object-fit: cover;
     font-size: 40px;
     transition: 0.3s linear;
    margin-bottom: 20px;
+   animation: scle 1.8s linear infinite;
 }
-.films__content-item>i:hover{
-    transform: scale(1.4);
-    animation: aylansin 0.8s linear infinite;
-}
+
 .films__time{
     color: white;
     width: 100px;
